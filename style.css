@@ -1002,6 +1002,9 @@ textarea:hover{
     .genie-content{
         padding: 0 0;
     }
+    header{
+        padding: 18px 30px;
+    }
     /* .eclips-img{
         display: block;
         width: 6%;
