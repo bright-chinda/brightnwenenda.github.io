@@ -187,9 +187,22 @@ header{
 
 
 /* <!-- PAGE CONTENT --> */
+.hero-section{
+    /* height: 100vh; */
+    /* background-color: red; */
+}
 .vector-background{
     position: relative;
     /* margin-bottom: 150px; */
+}
+.eclips-img{
+    display: none;
+    width: 5%;
+    position: absolute;
+    top: 0;
+}
+.eclips-img .img{
+    width: 100%;
 }
 .vector-background .vector-img{
     margin-top: 40px;
@@ -203,14 +216,14 @@ header{
 .second-vector-img{
     display: none;
 }
-.gg{
+/* .gg{
     display: flex;
     justify-content: center;
     width: 40%;
 }
 .gg .second-vector-img{
     width: 100%;
-}
+} */
 
 .page-content{
     display: flex;
@@ -262,7 +275,11 @@ header{
     border: 1px solid white;
     border-radius: 8px;
     cursor: pointer;
+    transition: 0.3s;
     z-index: 99;
+}
+.contact-link a:hover{
+    transform: translateY(-10%);
 }
 .contact-icon{
     fill: white;
@@ -715,6 +732,7 @@ textarea:hover{
 }
 .submit-message button:hover{
     opacity: 0.7;
+    transform: translateY(-10%);
 }
 .footer{
     display: flex;
@@ -984,6 +1002,12 @@ textarea:hover{
     .genie-content{
         padding: 0 0;
     }
+    /* .eclips-img{
+        display: block;
+        width: 6%;
+        position: absolute;
+        margin-top: -10px;
+    } */
 }
 
 @media screen and (max-width:486px) {

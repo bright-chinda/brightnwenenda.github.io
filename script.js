@@ -2,6 +2,7 @@ let menuBtn = document.querySelector(".menu-btn")
 let navlinks = document.querySelector(".nav-links")
 let closeBtn = document.querySelector(".close-menu")
 let openBtn = document.querySelector(".open-menu")
+let projectLink = document.querySelectorAll(".remove-background")
 
 menuBtn.addEventListener("click",function(){
     navlinks.classList.toggle("navactive")
@@ -13,6 +14,17 @@ menuBtn.addEventListener("click",function(){
         closeBtn.style.display = "none";
     }
 })
+
+for(let i = 0; i < projectLink.length; i++){
+    projectLink[i].addEventListener("click",function(){
+        navlinks.classList.remove("navactive")
+        if(!navlinks.classList.remove("navactive")){
+            openBtn.style.display = "block";
+            closeBtn.style.display = "none";
+        }
+    })
+}
+
 
 
 function sendMail(){
