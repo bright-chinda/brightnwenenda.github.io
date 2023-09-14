@@ -410,13 +410,24 @@ header{
     margin-top: 110px;
     padding: 60px 0;
 }
-.field h2{
+.field-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+    margin-bottom: 40px;
+}
+.field-header h2{
     text-align: center;
     font-size: 30px;
     color: #4ce19d;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 40px;
+}
+.field-header small{
+    margin-top: 0;
+    padding-top: 0;
 }
 .field-contents{
     display: flex;
@@ -473,7 +484,7 @@ header{
     font-weight: bold;
     color: #4ce19d;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 .carousel-item{
     /* margin-bottom: 70px; */
@@ -728,10 +739,11 @@ textarea:hover{
     font-weight: bold;
     border-radius: 8px;
     transition: 0.3s;
+    opacity: 0.8;
     cursor: pointer;
 }
 .submit-message button:hover{
-    opacity: 0.7;
+    opacity: 1;
     transform: translateY(-10%);
 }
 .footer{
