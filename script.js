@@ -62,7 +62,12 @@ function sendMail(){
             alerts.classList.remove("alert-active")
         }, 5000)
         console.log("succes");
-        email_id.value === "";
+
+        if(params === true){
+            email_id.style.display = "none";
+            from_name.value === "";
+            console.log(params);
+        }
        
             // params.email_id === "";
             // params.from_name === "";

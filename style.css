@@ -63,6 +63,37 @@ header{
 .owner-name a:hover{
     opacity: 0.8;
 }
+
+.socials-content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.telephone{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.telephone h5{
+    font-size: 13px;
+}
+.telephone h6{
+    font-size: 13px;
+    color: #4ce19d;
+}
+.ring-me{
+    display: flex;
+    /* align-items: center; */
+    gap: 3px;
+}
+.ring-icon{
+    fill: white;
+    transition: 0.3s;
+    /* background-color: red; */
+}
+.ring-icon:hover{
+    transform: rotate(30deg);
+}
 .social-handles{
     display: flex;
     align-items: center;
@@ -363,6 +394,7 @@ header{
 .figma-btn{
     padding: 8px 35px;
     background-color: aquamarine;
+    color: black;
     border-radius: 20px;
     border: none;
     transition: 0.3s;
@@ -953,6 +985,13 @@ textarea:hover{
     }
     .description p{
         width: 100%;
+    }
+    .footer{
+        align-items: center;
+    }
+    .socials-content{
+        flex-direction: column;
+        gap: 2px;
     }
 }
 
