@@ -42,22 +42,27 @@ header{
     gap: 30px;
 }
 .owner-name h3{
+    /* display: flex;
+    align-items: center; */
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.owner-name{
     display: flex;
     align-items: center;
-    font-size: 18px;
-    font-weight: bolder;
-    margin-top: 10px;
 }
 .owner-name a{
     color: white;
     text-decoration: none;
-    text-transform: uppercase;font-weight: bold;
-
+    text-transform: uppercase;
+    font-weight: bold;
     transition: 0.3s;
 }
 .nav-links{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 20px;
 }
 .owner-name a:hover{
@@ -71,7 +76,8 @@ header{
 }
 .telephone{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    /* flex-direction: column; */
     gap: 5px;
 }
 .telephone h5{
@@ -79,11 +85,12 @@ header{
 }
 .telephone h6{
     font-size: 13px;
-    color: #4ce19d;
+    color: white;
+    /* margin-bottom: 0; */
 }
 .ring-me{
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     gap: 3px;
 }
 .ring-icon{
@@ -167,7 +174,27 @@ header{
 .close-menu{
     display: none;
 }
-
+/* .editor-container.visible{
+    display: flex;
+} */
+.ii:hover .editor-container{
+    display: flex;
+}
+.editor-container{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 99999;
+}
+.editor-btn{
+    border: none;
+    background-color: transparent;
+}
 
 .alert-body{
     display: none;
@@ -518,13 +545,13 @@ header{
     text-transform: uppercase;
     /* margin-bottom: 40px; */
 }
-.carousel-item{
-    /* margin-bottom: 70px; */
-}
 .carousel-body{
     display: flex;
     justify-content: center;
     gap: 50px;
+}
+.carousel-body a{
+    text-decoration: none;
 }
 .carousel-content{
     width: 25%;
@@ -598,7 +625,6 @@ button.carousel-control-next{
     transition: all 0.3s;
 }
 .card-img:hover{
-    background-color: red;
     transform: scale(1.09);
     /* margin-top: 40px; */
 }
@@ -657,6 +683,7 @@ button.carousel-control-next{
 .genie-content h3{
     font-size: 23px;
     font-weight: bold;
+    line-height: 35px;
     text-transform: uppercase;
 }
 .genie-content p{
@@ -817,6 +844,7 @@ textarea:hover{
     .nav-links{
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 30px;
         width: 100%;
         height: 0;
@@ -902,6 +930,9 @@ textarea:hover{
     .contact-content p{
         width: 90%;
     }
+    .genie-content h3{
+        text-align: center;
+    }
     .carousel-body{
         /* background-color: white; */
         overflow: none;
@@ -979,6 +1010,7 @@ textarea:hover{
     }
     .about-us-body{
         width: 100%;
+        padding: 40px 10px;
     }
     .about-me-image{
         width: 100%;
@@ -989,9 +1021,13 @@ textarea:hover{
     .footer{
         align-items: center;
     }
+    .footer{
+        flex-direction: column;
+        gap: 5px;
+    }
     .socials-content{
         flex-direction: column;
-        gap: 2px;
+        gap: 5px;
     }
 }
 

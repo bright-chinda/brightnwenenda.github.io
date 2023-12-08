@@ -3,6 +3,7 @@ let navlinks = document.querySelector(".nav-links")
 let closeBtn = document.querySelector(".close-menu")
 let openBtn = document.querySelector(".open-menu")
 let projectLink = document.querySelectorAll(".remove-background")
+let alerts = document.querySelector(".alert-body")
 
 menuBtn.addEventListener("click",function(){
     navlinks.classList.toggle("navactive")
@@ -28,55 +29,55 @@ for(let i = 0; i < projectLink.length; i++){
 
 
 function sendMail(){
-    
-
 
     let params = {
         from_name : document.querySelector(".fullname").value,
         email_id : document.querySelector(".email_id").value,
         message : document.querySelector(".message").value
-
-        
     }
     
-    console.log(params);
 
     let seviceId = "service_byon9ke";
     let templateId = "template_2ktioei";
     emailjs.send(seviceId, templateId, params)
-
-    .then( res =>{
-        if(params.email_id === ""){
+    .then( (res)  => {
+        if (res.status == 200) {
+            document.querySelector(".fullname").value = ""
+            document.querySelector(".email_id").value = ""
+            document.querySelector(".message").value = ""
+        }
+        if(params.email_id =="" || params.full_name =="" || params.message ==""){
+            alert("error")
             alerts.style.display ="none";
-        }
-        if(params.from_name  === ""){
-            alerts.style.display ="none"
-        }
-        if(params.message === ""){
-            alerts.style.display ="none"
-        }
+        }else{
 
-        let alerts = document.querySelector(".alert-body")
+        console.log(params.email_id, params.from_name, params.message);
+
         alerts.classList.add("alert-active")
         setTimeout(()=>{
             alerts.classList.remove("alert-active")
         }, 5000)
         console.log("succes");
-
-        if(params === true){
-            email_id.style.display = "none";
-            from_name.value === "";
-            console.log(params);
         }
-       
-            // params.email_id === "";
-            // params.from_name === "";
-            // params.message === "";
 
-        if(alerts.classList.add("alert-active")){
-            params.style.display = "none"
-        }
         
+
+        
+
+        // if(params === true){
+        //     email_id.style.display = "none";
+        //     from_name.value === "";
+        //     console.log(params);
+        // }
+       
+         
+
+        // if(alerts.classList.add("alert-active")){
+        //     params.style.display = "none"
+        // }
+        params.from_name = ""
+        params.email_id = ""
+        params.message = ""
     })
     .catch();
 }
