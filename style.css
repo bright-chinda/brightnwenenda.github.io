@@ -118,6 +118,13 @@ header{
     transition: 0.3s;
     /* background-color: red; */
 }
+.twitter-img{
+  width: 20px;
+}
+.twitter-img .img{
+  width: 100%;
+  filter: invert(1);
+}
 .social-handles a:hover{
     opacity: 0.8;
 }
@@ -813,6 +820,7 @@ textarea:hover{
 .footer{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
 }
 .user-name a{
@@ -835,12 +843,21 @@ textarea:hover{
     opacity: 0.8;
 }
 
+.social-handles .show-social-content{
+  display: block;
+}
 
 
 @media screen and (max-width:1276px) {
     .social-handles{
         display: none;
     }
+    .social-handles.show-social-content{
+        display: flex;
+      }
+      .twitter-img{
+        width: 15px;
+      }
     .menu-btn{
         display: flex;
     }
