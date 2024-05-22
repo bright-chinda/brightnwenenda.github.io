@@ -362,6 +362,11 @@ header{
 }
 
 
+.visible{
+    /* background-color: red; */
+}
+
+
 
 .about{
     display: flex;

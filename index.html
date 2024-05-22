@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="shortcut icon" href="images/url logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
@@ -113,7 +114,7 @@
 
    
       <!-- FIELD -->
-      <div class="field" id="my-field">
+      <div class="field box" data-aos="fade-up" id="about-me-cont" id="my-field">
         <div class="field-header">
           <h2>Field</h2>
           <small>My Skills</small>
@@ -152,7 +153,7 @@
       <!-- FIELD ENDS HERE -->
 
        <!-- ABOUT US -->
-       <div class="about-us-cont-body" id="about-me-cont">
+       <div class="about-us-cont-body box" data-aos="fade-up" id="about-me-cont">
         <div class="about-me-image">
           <div class="about-img">
             <img src="images/bright img 2.jpeg" class="img">
@@ -184,12 +185,12 @@
 
 
       <!-- PROJECT CAROUSEL -->
-      <div class="project-carousel" id="my-project">
+      <div class="project-carousel box" id="my-project">
         <div class="field-header">
           <h2>projects</h2>
           <small>Finished Jobs</small>
         </div>
-        <div id="carouselExample" class="carousel slide">
+        <div id="carouselExample" data-aos="fade-up" id="about-me-cont" class="carousel slide">
           <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="carousel-body">
@@ -269,7 +270,7 @@
               </div>
           </div>
 
-        <div id="carouselExample2" class="carousel slide">
+        <div id="carouselExample2" data-aos="fade-up" id="about-me-cont" class="carousel slide">
           <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="carousel-body">
@@ -334,7 +335,7 @@
               </div>
           </div>
 
-        <div id="carouselExample3" class="carousel slide">
+        <div id="carouselExample3" data-aos="fade-up" id="about-me-cont" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="carousel-body">
@@ -409,7 +410,7 @@
               </div>
           </div>
 
-        <div id="carouselExample4" class="carousel slide">
+        <div id="carouselExample4" data-aos="fade-up" id="about-me-cont" class="carousel slide">
           <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="carousel-body">
@@ -613,7 +614,7 @@
     </div>
 
     <!-- FOOTER -->
-    <div class="footer-background">
+    <div class="footer-background"  data-aos="fade-up">
       <div class="contact-container" id="contact-me">
         <div class="contact-content">
           <h2>Contact</h2>
@@ -692,5 +693,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

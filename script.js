@@ -60,9 +60,6 @@ function sendMail(){
         console.log("succes");
         }
 
-        
-
-        
 
         // if(params === true){
         //     email_id.style.display = "none";
@@ -81,6 +78,30 @@ function sendMail(){
     })
     .catch();
 }
+
+
+// function intersectionCallback(entries,observer){
+//     entries.forEach(element => {
+//       if (element.isIntersecting) {
+//         element.target.classList.add("visible")
+//       }else{
+//         element.target.classList.remove("visible")
+//       }
+//     });
+// }
+
+// const options = {
+//   root: null,
+//   rootMargin: "0px",
+//   threshold: 0.5
+// }
+
+// const observer = new IntersectionObserver(intersectionCallback,options);
+
+// const boxes = document.querySelectorAll(".box")
+// boxes.forEach(element => {
+//     observer.observe(element);
+// });
 
 // let name = document.querySelector(".fullname")
     // let email_id = document.querySelector(".email_id")
