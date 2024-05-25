@@ -860,6 +860,7 @@ textarea:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 25px;
     margin-top: 20px;
 }
 .user-name{
@@ -1162,6 +1163,9 @@ textarea:hover{
     }
     header{
         padding: 18px 30px;
+    }
+    .footer-user-name{
+        display: none;
     }
     
     /* .eclips-img{
