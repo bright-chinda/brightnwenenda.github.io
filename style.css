@@ -526,8 +526,8 @@ header{
 .html-icon{
     display: flex;
     justify-content: center;
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     background-color: #242424;
     border-radius: 50%;
     object-fit: cover;
@@ -535,7 +535,7 @@ header{
     transition: 0.3s;
 }
 .html-icon .img{
-    width: 40%;
+    width: 55%;
     object-fit: contain;
     transition: 0.3s;
 }
