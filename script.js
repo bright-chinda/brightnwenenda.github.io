@@ -27,7 +27,6 @@ for(let i = 0; i < projectLink.length; i++){
 }
 
 
-
 function sendMail(){
 
     let params = {
@@ -59,19 +58,8 @@ function sendMail(){
         }, 5000)
         console.log("succes");
         }
-
-
-        // if(params === true){
-        //     email_id.style.display = "none";
-        //     from_name.value === "";
-        //     console.log(params);
-        // }
-       
          
 
-        // if(alerts.classList.add("alert-active")){
-        //     params.style.display = "none"
-        // }
         params.from_name = ""
         params.email_id = ""
         params.message = ""
