@@ -10,8 +10,8 @@ html{
 body{
   color: white;
   background-color: #151515;
-  font-family: "kanit", serif;
-  /* font-family: "Josefin+Sans", serif; */
+  /* font-family: "kanit", serif; */
+  font-family: "EB+Garamond", serif;
 }
 .page-container{
     padding: 0 90px;
@@ -333,6 +333,7 @@ header{
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    font-size: 18px;
 }
 .description p{
     width: 70%;
