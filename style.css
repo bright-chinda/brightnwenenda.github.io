@@ -324,6 +324,7 @@ header{
     font-weight: bold;
 }
 .name-span{
+    /* font-style: italic; */
     border-bottom: 4px solid #4ce19d;
 }
 
@@ -351,22 +352,93 @@ header{
     gap: 10px;
     width: 190px;
     padding: 13px 20px ;
-    /* background-color: #242424; */
+    background-color: rgb(17, 17, 17);
     color: white;
     font-size: 13px;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
-    border: 1px solid white;
-    border-radius: 8px;
+    border: 1px solid transparent;
+    /* border-radius: 8px; */
     cursor: pointer;
     transition: 0.3s;
     z-index: 99;
+    position: relative;
 }
 .contact-link a:hover{
-  transform: translateY(10%);
-  border: 1px solid #4ce19d;
+    transform: translateY(10%);
+    /* border: 1px solid #4ce19d; */
+  }
+.contact-link a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    animation: contact-top-anim 3s infinite alternate;
 }
+.contact-link a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    animation: contact-bottom-anim 3s infinite alternate;
+}
+@keyframes contact-top-anim  {
+    0%{
+      width: 0; 
+      height: 0;
+    }
+    25%{
+      width: 190px; 
+      height: 0;
+    }
+    50%{
+      width: 190px; 
+      height: 48px;
+      display: block;
+    }
+    100%{
+      width: 190px; 
+      height: 48px;
+      display: block;
+    }
+}
+@keyframes contact-bottom-anim {
+    0%{
+      width: 0; 
+      height: 0;
+      opacity: 0;
+    }
+    50%{
+      width: 190px; 
+      height: 0;
+      opacity: 1;
+    }
+    50.1%{
+      width: 190px; 
+      height: 0;
+      opacity: 1;
+    }
+    75%{
+      width: 190px; 
+      height: 0;
+      opacity: 1;
+    }
+    100%{
+      width: 190px; 
+      height: 48px;
+      opacity: 1;
+    }
+}
+
 .contact-icon{
     fill: white;
     animation: contact-icon 1.5s 0.5s 2 linear;
