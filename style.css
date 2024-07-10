@@ -378,7 +378,7 @@ header{
     height: 0;
     border-top: 2px solid white;
     border-right: 2px solid white;
-    animation: contact-top-anim 3s infinite alternate;
+    animation: contact-top-anim 3s 2 alternate;
 }
 .contact-link a::after{
     content: "";
@@ -389,7 +389,7 @@ header{
     height: 0;
     border-bottom: 2px solid white;
     border-left: 2px solid white;
-    animation: contact-bottom-anim 3s infinite alternate;
+    animation: contact-bottom-anim 3s 2 alternate;
 }
 @keyframes contact-top-anim  {
     0%{
