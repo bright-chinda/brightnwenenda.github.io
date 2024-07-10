@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,9 +8,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'montserrat', sans-serif;
-    color: white;
-    background-color: #151515;
+  color: white;
+  background-color: #151515;
+  font-family: "kanit", serif;
+  /* font-family: "Josefin+Sans", serif; */
 }
 .page-container{
     padding: 0 90px;
@@ -644,13 +647,15 @@ button.carousel-control-next{
    
 }   
 .carousel-body{
+    width: 100%;
     /* background-color: white; */
     overflow: none;
-    height: 280px;
+    /* height: 280px; */
     padding: 20px 20px;
+    /* background-color: white; */
 }
 .card-img{
-    /* height: 400px; */
+    /* height: 100%; */
     width: 100%;
     transition: all 0.3s;
 }
