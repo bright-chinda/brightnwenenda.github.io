@@ -41,22 +41,21 @@ function sendMail(){
     emailjs.send(seviceId, templateId, params)
     .then( (res)  => {
         if (res.status == 200) {
-            document.querySelector(".fullname").value = ""
-            document.querySelector(".email_id").value = ""
-            document.querySelector(".message").value = ""
+            document.querySelector(".fullname").value = "";
+            document.querySelector(".email_id").value = "";
+            document.querySelector(".message").value = "";
         }
         if(params.email_id =="" || params.full_name =="" || params.message ==""){
-            alert("error")
+            alert("Error The Following Details are Required")
             alerts.style.display ="none";
         }else{
+          console.log(params.email_id, params.from_name, params.message);
 
-        console.log(params.email_id, params.from_name, params.message);
-
-        alerts.classList.add("alert-active")
-        setTimeout(()=>{
+          alerts.classList.add("alert-active")
+          setTimeout(()=>{
             alerts.classList.remove("alert-active")
-        }, 5000)
-        console.log("succes");
+          }, 5000)
+          console.log("succes");
         }
          
 
@@ -64,7 +63,9 @@ function sendMail(){
         params.email_id = ""
         params.message = ""
     })
-    .catch();
+    .catch(err => {
+        console.log("something went wrong");
+    });
 }
 
 
